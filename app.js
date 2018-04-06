@@ -10,7 +10,7 @@ mongoose.connect('mongodb://localhost/mapeditor', { promiseLibrary: require('blu
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
-var zones = require('./routes/zones');
+var zones = require('./api/routes/zones');
 var app = express();
 
 app.use(logger('dev'));
